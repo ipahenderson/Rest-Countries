@@ -21,10 +21,12 @@ li {
 }
 
 #main-map {
-  width: 500px;
-  height: 500px;
+  margin-left: 50px;
+  width: 800px;
+  height: 800px;
   background: red;
   display: block;
+  margin: auto;
 }
 
 .row > * {
@@ -37,4 +39,5 @@ li {
 
 .col-8 {
   max-width: 66.66666666%;
+  margin-left: 50px;
 }
