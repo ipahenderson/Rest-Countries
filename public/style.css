@@ -1,0 +1,40 @@
+* {
+  font-family: Helvetica;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+#country-input {
+  display: block;
+  padding: 10px 5px;
+  width: 200px;
+  font-size: 14px;
+}
+
+#main-map {
+  width: 500px;
+  height: 500px;
+  background: red;
+  display: block;
+}
+
+.row > * {
+  float: left;
+}
+
+.col-4 {
+  max-width: 33.33333333%;
+}
+
+.col-8 {
+  max-width: 66.66666666%;
+}
