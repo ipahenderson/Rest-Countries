@@ -17,9 +17,9 @@ var populateList = function(countries) {
     var img = document.createElement('img');
     img.src = country.flag;
     img.width = 200;
-    h5.innerText = country.name;
-    p.innerText = country.population.toLocaleString('en-GB');
-    p2.innerText = country.capital;
+    h5.innerText = "Name: " + country.name;
+    p.innerText = "Population: " + country.population.toLocaleString('en-GB');
+    p2.innerText = "Capital: " + country.capital;
     li.appendChild(h5);
     li.appendChild(img);
     li.appendChild(p2);
