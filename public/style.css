@@ -24,7 +24,7 @@ li {
   margin-left: 50px;
   width: 800px;
   height: 800px;
-  background: red;
+  /*background: red;*/
   display: block;
   margin: auto;
 }
