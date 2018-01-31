@@ -28,9 +28,8 @@ var populateList = function(countries) {
   });
   var mapCountry = countries[0];
   var coords = {lat: mapCountry.latlng[0], lng: mapCountry.latlng[1]};
-console.log(coords);
   var mapDiv = document.getElementById('main-map');
-  var mainMap = new MapWrapper(mapDiv, coords, 10);
+  var mainMap = new MapWrapper(mapDiv, coords, 5);
   console.log(mainMap);
 }
 
