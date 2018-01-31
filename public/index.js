@@ -30,7 +30,7 @@ var populateList = function(countries) {
   var coords = {lat: mapCountry.latlng[0], lng: mapCountry.latlng[1]};
   var mapDiv = document.getElementById('main-map');
   var mainMap = new MapWrapper(mapDiv, coords, 5);
-  console.log(mainMap);
+  // console.log(mainMap);
 }
 
 var save = function(string) {
