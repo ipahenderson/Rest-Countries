@@ -54,11 +54,11 @@ var requestComplete = function() {
 
 var app = function(){
   var inputCountry = document.querySelector('#country-input');
-
-
+  var jsonString = localStorage.getItem('searchQuery');
+  var query = JSON.parse(jsonString) || "";
   var url = 'https://restcountries.eu/rest/v2';
 
-  inputCountry.addEventListener("keyup", function() {
+  var keyUpEvent = function() {
     var ul = document.querySelector('#country-list');
     var value = inputCountry.value;
     save(value);
@@ -68,8 +68,14 @@ var app = function(){
     newURL = url + extension
     // console.log(newURL);
     makeRequest(newURL, requestComplete);
+  }
 
-  })
+  inputCountry.addEventListener("keyup", keyUpEvent);
+
+  inputCountry.value = query;
+  if(inputCountry.value.length !== 0) {
+    keyUpEvent();
+  }
 
 
 };
